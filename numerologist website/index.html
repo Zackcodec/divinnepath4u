@@ -1,0 +1,303 @@
+<!-- index.html - Premium Nike-like landing for Numerology (Minimal, responsive, conversion-first) -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Shilpi Shivhare — Numerology & Tarot. Personalized readings, reports and online sessions." />
+  <title>Shilpi Shivhare — Numerology & Tarot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Preconnect for performance (Unsplash preview images used) -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+</head>
+<body>
+  <!-- SITE WRAPPER -->
+  <div class="site">
+
+    <!-- NAV -->
+    <header class="nav" role="banner">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#" aria-label="Shilpi Shivhare home">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">
+            <strong>Shilpi</strong>
+            <span class="muted">Numerology</span>
+          </div>
+        </a>
+
+        <nav class="links" role="navigation" aria-label="Main">
+          <a href="#services">Services</a>
+          <a href="#packages">Packages</a>
+          <a href="#insights">Insights</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact" class="btn small">Book</a>
+        </nav>
+
+        <button id="navToggle" class="hamburger" aria-label="Toggle menu">☰</button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAV (cloned for accessibility) -->
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#insights">Insights</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact" class="btn">Book</a>
+    </div>
+
+    <!-- HERO -->
+    <main>
+      <section id="hero" class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-left">
+            <p class="eyebrow">Numerology • Tarot • Life Guidance</p>
+            <h1 class="hero-title">Discover what your numbers say about your next move</h1>
+            <p class="lead">Personalized readings, reports, and forecasts for clarity and guidance.</p>
+
+            <div class="hero-ctas">
+              <button class="btn primary" id="heroBook">Book a Session</button>
+              <a href="#insights" class="btn ghost">Daily Insights</a>
+            </div>
+
+            <ul class="trust">
+              <li><span class="muted">12 yrs experience</span></li>
+              <li><span class="muted">8k+ clients</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-right" aria-hidden="false">
+            <div class="hero-art glass">
+              <!-- Main visual: large product-like card with subtle 3D and overlay -->
+              <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="mystic artwork" class="hero-img" />
+              <div class="hero-overlay">
+                <div class="overlay-title">Mini Reading</div>
+                <div class="overlay-sub">3-card peek — instant insight</div>
+                <div class="overlay-actions">
+                  <button class="btn small" id="overlayChat">Chat on WhatsApp</button>
+                  <button class="btn small ghost" id="overlayTry">Try Free</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-row">
+              <div class="feature glass">
+                <div class="f-title">Personal Report</div>
+                <div class="f-desc muted">Detailed numerology PDF</div>
+              </div>
+              <div class="feature glass">
+                <div class="f-title">Live Session</div>
+                <div class="f-desc muted">Video + voice followup</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section">
+        <div class="wrap">
+          <h2 class="section-title">Services</h2>
+          <p class="muted sub">Simple, clear services designed to give fast clarity.</p>
+
+          <div class="cards-grid">
+            <article class="service card glass">
+              <div class="svc-top">
+                <div class="svc-ico">🔮</div>
+                <h3>Tarot Reading</h3>
+              </div>
+              <p>Deep 60-minute tarot sessions focused on love, career, and decisions.</p>
+              <div class="svc-meta">Includes notes & recording</div>
+            </article>
+
+            <article class="service card glass">
+              <div class="svc-top">
+                <div class="svc-ico">🔢</div>
+                <h3>Numerology Report</h3>
+              </div>
+              <p>Personalized PDF — life path, expression, year cycles, compatibility.</p>
+              <div class="svc-meta">Downloadable report</div>
+            </article>
+
+            <article class="service card glass">
+              <div class="svc-top">
+                <div class="svc-ico">📅</div>
+                <h3>Monthly Forecast</h3>
+              </div>
+              <p>Short, actionable monthly predictions and energy windows for decisions.</p>
+              <div class="svc-meta">Quick check-in</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PACKAGES -->
+      <section id="packages" class="section dark">
+        <div class="wrap">
+          <h2 class="section-title">Packages</h2>
+          <p class="muted sub">Transparent pricing — choose what fits.</p>
+
+          <div class="pricing-grid">
+            <div class="price card glass">
+              <div class="price-head">Starter</div>
+              <div class="price-amount">₹499</div>
+              <ul class="price-list muted">
+                <li>3-card mini</li>
+                <li>Instant snapshot</li>
+              </ul>
+              <button class="btn primary price-cta" data-package="Starter" data-price="499">Book Starter</button>
+            </div>
+
+            <div class="price card glass best">
+              <div class="price-head">Pro</div>
+              <div class="price-amount">₹1499</div>
+              <ul class="price-list muted">
+                <li>60-min tarot + notes</li>
+                <li>Numerology snapshot</li>
+              </ul>
+              <button class="btn primary price-cta" data-package="Pro" data-price="1499">Book Pro</button>
+            </div>
+
+            <div class="price card glass">
+              <div class="price-head">Premium</div>
+              <div class="price-amount">₹2499</div>
+              <ul class="price-list muted">
+                <li>Full numerology PDF</li>
+                <li>90-min deep session</li>
+              </ul>
+              <button class="btn primary price-cta" data-package="Premium" data-price="2499">Book Premium</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSIGHTS (Blog-like) -->
+      <section id="insights" class="section">
+        <div class="wrap">
+          <h2 class="section-title">Insights</h2>
+          <p class="muted sub">Daily numbers & short posts</p>
+
+          <div class="insights-grid">
+            <article class="post card glass">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="post" loading="lazy"/>
+              <div class="post-body">
+                <h3>Life Path 7 — Focus & Intuition</h3>
+                <p class="muted">Explore how introspection and study lead to clarity this month.</p>
+                <a href="#" class="muted read">Read →</a>
+              </div>
+            </article>
+
+            <article class="post card glass">
+              <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="post" loading="lazy"/>
+              <div class="post-body">
+                <h3>Numbers for career moves</h3>
+                <p class="muted">Best windows to apply or negotiate offers.</p>
+                <a href="#" class="muted read">Read →</a>
+              </div>
+            </article>
+
+            <article class="post card glass">
+              <img src="https://images.unsplash.com/photo-1502945015378-76f3f8b9f9c8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="post" loading="lazy"/>
+              <div class="post-body">
+                <h3>Tarot spread for decisions</h3>
+                <p class="muted">How to ask better questions to get clearer answers.</p>
+                <a href="#" class="muted read">Read →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="section dark">
+        <div class="wrap">
+          <h2 class="section-title">What clients say</h2>
+
+          <div class="testi-grid">
+            <blockquote class="testi card glass">"Spot on reading — helped me change career." <cite>- Ritu</cite></blockquote>
+            <blockquote class="testi card glass">"Warm & practical guidance." <cite>- Aman</cite></blockquote>
+            <blockquote class="testi card glass">"I loved the numerology PDF." <cite>- Priya</cite></blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / BOOKING -->
+      <section id="contact" class="section">
+        <div class="wrap contact-grid">
+          <div class="contact card glass">
+            <h2>Book a session</h2>
+            <p class="muted">Fill short form — we’ll reach out to confirm.</p>
+
+            <form id="contactForm" novalidate>
+              <label class="field">
+                <span class="label">Full name</span>
+                <input id="name" name="name" type="text" required />
+              </label>
+
+              <label class="field">
+                <span class="label">Email</span>
+                <input id="email" name="email" type="email" required />
+              </label>
+
+              <label class="field">
+                <span class="label">Date of birth</span>
+                <input id="dob" name="dob" type="date" />
+              </label>
+
+              <label class="field">
+                <span class="label">Message</span>
+                <textarea id="message" rows="3"></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn primary" type="submit">Send request</button>
+                <button class="btn ghost" type="button" id="whatsFast">Chat on WhatsApp</button>
+              </div>
+
+              <div id="formMsg" role="status" aria-live="polite" hidden></div>
+            </form>
+          </div>
+
+          <aside class="aside card glass">
+            <h3>Quick contact</h3>
+            <p class="muted">WhatsApp for instant replies</p>
+            <a class="wa-link" id="waLink" href="https://wa.me/919999999999">+91 99999 99999</a>
+
+            <div class="aside-meta">
+              <div><strong>Payment</strong><div class="muted">UPI / Razorpay</div></div>
+              <div><strong>Languages</strong><div class="muted">English / Hindi</div></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="wrap footer-inner">
+          <div>© <span id="year"></span> Shilpi Shivhare</div>
+          <nav class="foot-links muted">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Instagram</a>
+          </nav>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Modal: package quick -->
+  <div id="pkgModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel glass">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <h3 id="pkgTitle">Package</h3>
+      <p id="pkgDesc"></p>
+      <div class="modal-actions">
+        <button class="btn primary" id="modalBookNow">Book Now</button>
+        <button class="btn ghost" id="modalWhats">Chat on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
